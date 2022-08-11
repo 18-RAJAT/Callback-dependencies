@@ -2,6 +2,7 @@ import './App.css';
 import { useState,useEffect} from 'react';
 
 function App() {
+  
   const [number,setNumber]=useState(0);
   const [name,setName]=useState({
   name: "",
