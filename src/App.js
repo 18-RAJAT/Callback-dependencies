@@ -10,8 +10,8 @@ function App() {
   useEffect(()=>{
     console.log("UseEffect runs!!");
     document.title=`You clicked ${number} times`;
-  })
-
+  },[]);
+  console.count("Component rendered");
   return (
     <div className="App">
       <span>You Clicked{number}</span>
