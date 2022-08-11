@@ -1,10 +1,15 @@
 import './App.css';
-import { useState } from 'react';
+import { useState,useEffect} from 'react';
 
 function App() {
   const [number,setNumber]=useState(0);
-  console.log("Compoment App is rendering");
+  // console.log("Compoment App is rendering");
   // console.count("Times rendered");
+
+  useEffect(()=>{
+    console.log("UseEffect runs!!");
+    document.title=`You clicked ${number} times`;
+  })
 
   return (
     <div className="App">
